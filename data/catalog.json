@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "updated_on": "2026-03-18",
+  "prompt_count": 2,
+  "categories": [
+    "image"
+  ],
+  "entries": [
+    {
+      "id": "prompt-001",
+      "slug": "insectoid-human-retro-futurist-portrait",
+      "title": "Insectoid Human Retro-Futurist Portrait",
+      "category": "image",
+      "status": "seed",
+      "tags": [
+        "biomorphic-scifi",
+        "character-design",
+        "fashion",
+        "portrait"
+      ],
+      "best_for": [
+        "image generation",
+        "concept art",
+        "fashion-forward creature design"
+      ],
+      "path": "prompts/image/insectoid-human-retro-futurist-portrait.json"
+    },
+    {
+      "id": "prompt-002",
+      "slug": "post-rain-summer-cyclist-seaside-village",
+      "title": "Post-Rain Summer Cyclist Above a Seaside Village",
+      "category": "image",
+      "status": "curated",
+      "tags": [
+        "anime",
+        "cinematic",
+        "summer",
+        "landscape",
+        "travel",
+        "weather"
+      ],
+      "best_for": [
+        "image generation",
+        "anime illustration",
+        "cinematic environment prompts"
+      ],
+      "path": "prompts/image/post-rain-summer-cyclist-seaside-village.json"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "prompt-001",
+  "slug": "insectoid-human-retro-futurist-portrait",
+  "title": "Insectoid Human Retro-Futurist Portrait",
+  "category": "image",
+  "status": "seed",
+  "source": "user",
+  "created_at": "2026-03-18",
+  "raw_prompt": "tlandish insectoid-human designs. Glossy reflections, subsurface scattering, translucency, cellular textures, sleek minimalist victorian-style collar design blended with post-modern retro-futuristic aesthetics. Futuristic representation that highlights a fascinating mix of natural forms and science fiction, with the e",
+  "cleaned_prompt": "Outlandish insectoid-human portrait design with glossy reflections, strong subsurface scattering, translucent surfaces, and intricate cellular textures. A sleek minimalist Victorian-style collar merged with post-modern retro-futuristic fashion. Emphasize the tension between organic anatomy and science-fiction elegance.",
+  "tags": [
+    "biomorphic-scifi",
+    "character-design",
+    "fashion",
+    "portrait"
+  ],
+  "style_tokens": [
+    "glossy reflections",
+    "subsurface scattering",
+    "translucency",
+    "cellular textures",
+    "Victorian collar",
+    "retro-futuristic styling"
+  ],
+  "reuse_patterns": [
+    "hybrid species concept",
+    "historical garment fused with futuristic silhouette",
+    "organic surface realism with polished materials"
+  ],
+  "variations": [
+    "Recast the portrait as a royal court image with wing membranes forming a cape silhouette.",
+    "Push the design toward luxury product photography by treating the collar and exoskeleton like premium industrial hardware.",
+    "Expand from close-up portrait to full-body fashion editorial while preserving the same material language."
+  ],
+  "why_it_works": [
+    "It combines strong material cues with a distinctive silhouette anchor.",
+    "The prompt balances alien anatomy with fashion language, which keeps the result visually legible.",
+    "It gives rendering direction without locking the image into one exact composition."
+  ],
+  "failure_modes": [
+    "Models may over-index on horror instead of elegance.",
+    "The truncated raw source leaves some ambiguity around framing and final mood."
+  ],
+  "best_for": [
+    "image generation",
+    "concept art",
+    "fashion-forward creature design"
+  ],
+  "notes": "The original fragment is truncated at both the beginning and end, so the cleaned version fills in structure without replacing the source."
+}

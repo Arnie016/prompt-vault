@@ -1,0 +1,56 @@
+{
+  "id": "prompt-002",
+  "slug": "post-rain-summer-cyclist-seaside-village",
+  "title": "Post-Rain Summer Cyclist Above a Seaside Village",
+  "category": "image",
+  "status": "curated",
+  "source": "user",
+  "created_at": "2026-03-18",
+  "raw_prompt": "anime-style cinematic post-rain summer countryside scene, portrait composition, viewed from behind a Japanese sporty teenage girl riding a purple mountain bike along a wet hillside road under clearing skies, natural cycling posture, hands on the handlebars, feet on the pedals, looking toward a Japanese seaside village in the distance. She has slightly tousled short black hair tied into a low ponytail, and wears a loose ivory athletic short-sleeve shirt layered over a fitted white inner top, high-waisted navy running shorts, black mid-calf socks, white and gray running sneakers, and a lightweight orange sports backpack slightly darkened by moisture. The foreground features rain-soaked grass, sparkling droplets on wildflowers, small puddles, and wet rocks softly blurred. The middle ground reveals tiled rooftops, reflective roads, utility poles, and power lines glistening after rain. Beyond the town, the beach and sea shine under a sudden break of warm sunlight, with soft mist lingering near the hills. The mountains on the left are partly veiled in cloud shadow, while the upper sky opens into rich blue with towering bright clouds splitting apart after the storm. painterly yet clean digital illustration, luminous wet textures, dramatic atmosphere, emotional summer realism, no text, no interface, Ultra HD 4K --ar 9:16 --quality 2 --raw --stylize 50 --v 7",
+  "cleaned_prompt": "Anime-style cinematic post-rain summer countryside scene in portrait composition, viewed from behind a sporty Japanese teenage girl riding a purple mountain bike along a wet hillside road under clearing skies. She keeps a natural cycling posture, hands on the handlebars and feet on the pedals, looking toward a distant Japanese seaside village. Slightly tousled short black hair tied into a low ponytail. Loose ivory athletic short-sleeve shirt over a fitted white inner top, high-waisted navy running shorts, black mid-calf socks, white and gray running sneakers, and a lightweight orange sports backpack darkened by moisture. Foreground of rain-soaked grass, sparkling droplets on wildflowers, small puddles, and wet rocks softly blurred. Middle ground of tiled rooftops, reflective roads, utility poles, and glistening power lines. Beyond the town, the beach and sea shine under a sudden break of warm sunlight with soft mist near the hills. Mountains on the left partly veiled in cloud shadow, upper sky opening into rich blue with towering bright clouds splitting after the storm. Painterly but clean digital illustration, luminous wet textures, dramatic atmosphere, emotional summer realism, no text, no interface, Ultra HD 4K.",
+  "tags": [
+    "anime",
+    "cinematic",
+    "summer",
+    "landscape",
+    "travel",
+    "weather"
+  ],
+  "style_tokens": [
+    "portrait composition",
+    "rear-view subject",
+    "purple mountain bike",
+    "wet hillside road",
+    "Japanese seaside village",
+    "sparkling droplets",
+    "reflective roads",
+    "warm sunlight after storm",
+    "towering splitting clouds"
+  ],
+  "reuse_patterns": [
+    "weather turning point as emotional hook",
+    "subject moving toward distant settlement",
+    "high-detail wardrobe for grounded realism",
+    "foreground blur plus expansive background storytelling"
+  ],
+  "variations": [
+    "Shift the same setup to dawn after a typhoon with cooler tones and thinner mist.",
+    "Swap the bicycle for a small scooter and lean into coastal nostalgia.",
+    "Turn the concept into a sequence of images: hilltop approach, town descent, beach arrival."
+  ],
+  "why_it_works": [
+    "The prompt has a clear emotional arc from storm aftermath to sunlit destination.",
+    "Foreground, middle ground, and background are all specified, which improves depth and coherence.",
+    "Wardrobe and posture details ground the scene so the atmosphere does not float into generic anime imagery."
+  ],
+  "failure_modes": [
+    "Some models may over-focus on the rider and lose the village or coastline payoff.",
+    "If the model struggles with weather nuance, the image can flatten into a generic sunny bike scene."
+  ],
+  "best_for": [
+    "image generation",
+    "anime illustration",
+    "cinematic environment prompts"
+  ],
+  "notes": "Good template for travel-in-motion scenes where weather change carries the emotional weight."
+}
