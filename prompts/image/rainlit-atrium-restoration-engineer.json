@@ -1,0 +1,55 @@
+{
+  "id": "prompt-003",
+  "slug": "rainlit-atrium-restoration-engineer",
+  "title": "Rainlit Atrium Restoration Engineer",
+  "category": "image",
+  "status": "curated",
+  "source": "user",
+  "created_at": "2026-03-19",
+  "raw_prompt": "cinematic editorial illustration of a solitary restoration engineer standing in a flooded art-deco train station atrium at blue hour, holding a brass lantern and a rolled blueprint, rain streaking through the glass roof, reflected light on wet marble floors, suspended departure boards, weathered brass railings, long perspective lines toward a sunlit platform in the distance, the scene should feel quiet, precise, and hopeful, with strong material contrast between polished stone, aged metal, rain mist, and warm dawn light, high-detail realistic composition, no text, no logos, ultra detailed",
+  "cleaned_prompt": "Cinematic editorial illustration of a solitary restoration engineer standing in a flooded art-deco train station atrium at blue hour. The figure holds a brass lantern and a rolled blueprint while rain streaks through the glass roof above. Reflected light shimmers across wet marble floors, with suspended departure boards, weathered brass railings, and long perspective lines leading toward a sunlit platform in the distance. The scene should feel quiet, precise, and hopeful, with strong material contrast between polished stone, aged metal, rain mist, and warm dawn light. High-detail realistic composition, no text, no logos, ultra detailed.",
+  "tags": [
+    "cinematic",
+    "architecture",
+    "weather",
+    "editorial",
+    "character",
+    "light-and-reflection"
+  ],
+  "style_tokens": [
+    "art-deco station atrium",
+    "blue hour rain",
+    "brass lantern",
+    "rolled blueprint",
+    "wet marble reflections",
+    "weathered brass railings",
+    "sunlight through glass roof",
+    "long perspective lines"
+  ],
+  "reuse_patterns": [
+    "threshold scene between storm and release",
+    "architectural scale framing a solitary human figure",
+    "material contrast between old metal and wet stone",
+    "distant destination as emotional payoff"
+  ],
+  "variations": [
+    "Replace the restoration engineer with a violinist or archivist while keeping the same atrium and weather structure.",
+    "Swap the train station for a museum lobby or conservatory to preserve the threshold composition with a different setting.",
+    "Turn the scene into a vertical poster by centering the subject under the skylight and compressing the platform perspective."
+  ],
+  "why_it_works": [
+    "It uses a strong architectural frame to organize a lot of visual detail without becoming chaotic.",
+    "The weather-to-light transition creates a built-in story arc, so the image feels more than decorative.",
+    "Occupation-specific props like the lantern and blueprint stabilize the character and suggest a real task."
+  ],
+  "failure_modes": [
+    "The model may add too much signage or crowd the frame with extra trains and passengers.",
+    "If the light transition is weak, the scene can flatten into a generic rainy station illustration."
+  ],
+  "best_for": [
+    "image generation",
+    "cinematic concept art",
+    "architecture-heavy scenes"
+  ],
+  "notes": "This entry adds a reusable threshold-framing pattern: interior architecture, weathered surfaces, and a clear release point in the distance."
+}

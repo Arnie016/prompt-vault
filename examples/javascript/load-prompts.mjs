@@ -8,10 +8,24 @@ const repoRoot = path.resolve(__dirname, "..", "..");
 const catalogPath = path.join(repoRoot, "data", "catalog.json");
 
 const catalog = JSON.parse(fs.readFileSync(catalogPath, "utf8"));
-const curatedImagePrompts = catalog.entries.filter(
-  (entry) => entry.category === "image" && entry.status !== "seed"
-);
+
+function filterEntries(entries, { category, excludeStatuses = [] } = {}) {
+  return entries.filter((entry) => {
+    if (category && entry.category !== category) {
+      return false;
+    }
+    if (excludeStatuses.includes(entry.status)) {
+      return false;
+    }
+    return true;
+  });
+}
+
+const curatedImagePrompts = filterEntries(catalog.entries, {
+  category: "image",
+  excludeStatuses: ["seed"],
+});
 
 for (const entry of curatedImagePrompts) {
-  console.log(`${entry.id}: ${entry.title}`);
+  console.log(`${entry.id}: ${entry.title} [${entry.status}] -> ${entry.path}`);
 }

@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arnie016/prompt-vault/schemas/subagent-query.schema.json",
+  "title": "Subagent Query Entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "slug",
+    "title",
+    "domain",
+    "scenario",
+    "mode",
+    "difficulty",
+    "recommended_subagents",
+    "prompt",
+    "expected_output",
+    "tags"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scenario": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mode": {
+      "type": "string",
+      "minLength": 1
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "medium",
+        "high"
+      ]
+    },
+    "recommended_subagents": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "prompt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "expected_output": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "tags": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

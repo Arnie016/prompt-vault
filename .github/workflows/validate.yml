@@ -1,0 +1,31 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate prompt files
+        run: python3 scripts/validate_prompts.py
+
+      - name: Rebuild prompt catalog
+        run: python3 scripts/build_catalog.py
+
+      - name: Generate subagent query pack
+        run: python3 scripts/generate_subagent_queries.py
+
+      - name: Validate subagent query pack
+        run: python3 scripts/validate_subagent_queries.py
+
+      - name: Check generated files are committed
+        run: git diff --exit-code

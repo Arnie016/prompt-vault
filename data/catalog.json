@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_on": "2026-03-18",
-  "prompt_count": 2,
+  "updated_on": "2026-03-19",
+  "prompt_count": 3,
   "categories": [
     "image"
   ],
@@ -45,6 +45,27 @@
         "cinematic environment prompts"
       ],
       "path": "prompts/image/post-rain-summer-cyclist-seaside-village.json"
+    },
+    {
+      "id": "prompt-003",
+      "slug": "rainlit-atrium-restoration-engineer",
+      "title": "Rainlit Atrium Restoration Engineer",
+      "category": "image",
+      "status": "curated",
+      "tags": [
+        "cinematic",
+        "architecture",
+        "weather",
+        "editorial",
+        "character",
+        "light-and-reflection"
+      ],
+      "best_for": [
+        "image generation",
+        "cinematic concept art",
+        "architecture-heavy scenes"
+      ],
+      "path": "prompts/image/rainlit-atrium-restoration-engineer.json"
     }
   ]
 }

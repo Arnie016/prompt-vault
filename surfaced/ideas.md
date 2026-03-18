@@ -6,6 +6,7 @@
 - weather change used as emotional structure
 - historically informed clothing blended with futuristic styling
 - distant destinations used as visual payoff
+- threshold interiors that turn architecture into narrative movement
 
 ## Reusable building blocks
 
@@ -14,6 +15,8 @@
 - foreground blur with narrative background depth
 - wardrobe detail as realism stabilizer
 - atmospheric transitions instead of static lighting
+- architectural scale contrast
+- skylights, glass roofs, and doorways as light-control devices
 
 ## Best current prompt patterns
 
@@ -28,3 +31,7 @@ Place the subject in motion, frame them from behind or in profile, and give them
 ### Storm-to-light contrast
 
 Use a recent weather event as the emotional before-state and the first return of sunlight as the emotional release.
+
+### Threshold framing
+
+Use an interior/exterior boundary, such as a glass roof, doorway, or concourse, to turn the environment into a story about movement toward a destination.

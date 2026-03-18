@@ -121,6 +121,14 @@
     },
     "notes": {
       "type": "string"
+    },
+    "extensions": {
+      "type": "object",
+      "description": "Optional additive metadata for client-specific extensions. Core tooling may ignore this field.",
+      "propertyNames": {
+        "pattern": "^[a-z0-9][a-z0-9._-]*$"
+      },
+      "additionalProperties": true
     }
   }
 }

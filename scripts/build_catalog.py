@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import tempfile
 from pathlib import Path
 
 
@@ -9,12 +10,25 @@ PROMPTS_DIR = REPO_ROOT / "prompts"
 DATA_DIR = REPO_ROOT / "data"
 
 
+def assert_unique(entries: list[dict]) -> None:
+    for key in ("id", "slug"):
+        seen: dict[str, str] = {}
+        for entry in entries:
+            value = entry.get(key)
+            path = entry.get("_path", "<unknown>")
+            if value in seen:
+                raise ValueError(f"Duplicate {key} '{value}' in {path} and {seen[value]}")
+            seen[value] = path
+
+
 def load_prompt_files() -> list[dict]:
     entries = []
     for path in sorted(PROMPTS_DIR.rglob("*.json")):
         entry = json.loads(path.read_text())
         entry["_path"] = path.relative_to(REPO_ROOT).as_posix()
         entries.append(entry)
+    entries.sort(key=lambda item: (item["category"], item["slug"], item["id"]))
+    assert_unique(entries)
     return entries
 
 
@@ -62,7 +76,10 @@ def build_db(entries: list[dict]) -> dict:
 
 
 def write_json(path: Path, payload: dict) -> None:
-    path.write_text(json.dumps(payload, indent=2) + "\n")
+    with tempfile.NamedTemporaryFile("w", dir=path.parent, delete=False) as handle:
+        handle.write(json.dumps(payload, indent=2) + "\n")
+        temp_path = Path(handle.name)
+    temp_path.replace(path)
 
 
 def main() -> None:
